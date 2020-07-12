@@ -3,6 +3,12 @@ body {
   background-color: #011F3F;
 }
 
+.navigation{
+
+  margin: 20px 20px 0;
+
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -18,7 +24,7 @@ body {
 }
 
 .btn {
-  margin: 25px;
+  margin: 25px !important;
   display: inline-block;
   height: 200px;
   width: 200px;
@@ -50,4 +56,13 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+/*  following are particularly in how to play page */
+
+.game-instruction{
+  color: #fff;
+  font-size: large;
+  padding: 0 25%;
+  line-height: 2;
 }
