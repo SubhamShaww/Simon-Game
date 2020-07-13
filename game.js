@@ -82,9 +82,24 @@ function nextSequence(){
 
     gamePattern.push(randomChosenColour);
 
-    $("#" + randomChosenColour).fadeOut(100).fadeIn(100);
+    for(var i = 0; i < gamePattern.length; i++){
 
-    playSound(randomChosenColour);
+        myTimeout(i);
+
+    }
+
+}
+
+//myTimeout function definition
+function myTimeout(i){
+
+    setTimeout( function(){
+
+        $("#" + gamePattern[i]).fadeOut(100).fadeIn(100);
+    
+        playSound(gamePattern[i]);
+
+    }, 500 * i);
 
 }
 
@@ -119,4 +134,3 @@ function animatePress(currentColour){
 
 
 }
-
