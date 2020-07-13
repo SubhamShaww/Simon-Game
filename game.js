@@ -61,7 +61,7 @@ function checkAnswer(currentLevel){
             $("body").removeClass("game-over");
         }, 200);
 
-        $("#level-title").text("Your Score is: " + level + ". Press a key to restart");
+        $("#level-title").text("Your Score is: " + level + ". Press a key to Restart");
         startOver();
 
     }
