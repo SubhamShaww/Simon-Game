@@ -61,10 +61,20 @@ function checkAnswer(currentLevel){
             $("body").removeClass("game-over");
         }, 200);
 
-        $("#level-title").text("Game Over, Press a Key to Restart");
+        $("#level-title").text("Your Score is:" + level + ". Press a key to restart");
         startOver();
 
     }
+
+}
+
+
+//for restrating the game
+function startOver(){
+
+    started = false;
+    level = 0;
+    gamePattern = [];
 
 }
 
@@ -100,16 +110,6 @@ function myTimeout(i){
         playSound(gamePattern[i]);
 
     }, 500 * i);
-
-}
-
-
-//for restrating the game
-function startOver(){
-
-    started = false;
-    level = 0;
-    gamePattern = [];
 
 }
 
