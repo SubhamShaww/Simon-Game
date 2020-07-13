@@ -90,7 +90,7 @@ function nextSequence(){
 
 }
 
-//myTimeout function definition
+//myTimeout function definition used in nextSequence()
 function myTimeout(i){
 
     setTimeout( function(){
